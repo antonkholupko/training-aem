@@ -29,16 +29,16 @@
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="granite/ui/components/foundation/form/fileupload"
                                     autoStart="{Boolean}false"
-                                    class="cq-droptarget"
-                                    fieldLabel="Image asset"
+                                    fieldDescription="Featured logo image"
+                                    class="cq-droptarget reenable-droptarget"
+                                    fieldLabel="Story logo image"
                                     fileNameParameter="./fileName"
                                     mimeTypes="[image]"
                                     multiple="{Boolean}false"
                                     name="./file"
-                                    title="Upload Image Asset"
+                                    title="Drag logo image from sidebar"
                                     useHTML5="{Boolean}true"
-                                    allowUpload="{Boolean}false"
-                                    disabled="{Boolean}true"/>
+                                    allowUpload="{Boolean}false"/>
                             <title
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="granite/ui/components/foundation/form/textfield"
