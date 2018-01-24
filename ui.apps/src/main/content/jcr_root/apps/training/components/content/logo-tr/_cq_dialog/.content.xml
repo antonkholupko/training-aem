@@ -27,18 +27,16 @@
                         <items jcr:primaryType="nt:unstructured">
                             <file
                                     jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                    sling:resourceType="/apps/training/components/content/logo-tr/fileupload"
                                     autoStart="{Boolean}false"
                                     fieldDescription="Featured logo image"
                                     class="cq-droptarget reenable-droptarget"
                                     fieldLabel="Story logo image"
-                                    fileNameParameter="./fileName"
                                     mimeTypes="[image]"
                                     multiple="{Boolean}false"
-                                    name="./file"
-                                    title="Drag logo image from sidebar"
                                     useHTML5="{Boolean}true"
-                                    allowUpload="{Boolean}false"/>
+                                    allowUpload="{Boolean}false"
+                                    disabled="{Boolean}true"/>
                             <title
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="granite/ui/components/foundation/form/textfield"
