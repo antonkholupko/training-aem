@@ -1,7 +1,7 @@
 <a
         data-sly-use.image="image.js"
         data-sly-unwrap="${!image.linkUrl}"
-        href="${image.linkUrl}"
+        href="${image.linkUrl}.html"
         onclick="CQ_Analytics.record({event: 'imageClick', values: { imageLink: '${image.linkurl @ context='scriptString'}', imageAsset: '${image.filereference @ context='scriptString'}', imageTitle: '${image.fileName @ context='scriptString'}' }, collect: false, options: { obj: this }, componentPath: '${image.resource.resourceType @ context='scriptString'}'})">
     <img
             src="${image.src}"
@@ -14,7 +14,7 @@
             usemap="${image.imageMaps.hash}"/>
 </a>
 
-<!--map
+<map
         data-sly-list="${image.imageMaps.maps}"
         name="${image.imageMaps.name}">
     <area
@@ -24,4 +24,4 @@
             target="${item.target}"
             alt="${item.alt}"
             title="${item.title}"/>
-</map-->
+</map>

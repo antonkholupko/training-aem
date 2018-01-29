@@ -47,7 +47,8 @@
                                     sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
                                     fieldLabel="Link to"
                                     name="./linkURL"
-                                    rootPath="/content"/>
+                                    rootPath="/content/training"
+                                    value="/content/training/en.html"/>
                             <description
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="granite/ui/components/foundation/form/textarea"
