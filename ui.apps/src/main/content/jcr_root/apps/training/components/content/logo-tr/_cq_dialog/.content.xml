@@ -48,7 +48,8 @@
                                     fieldLabel="Link to"
                                     name="./linkURL"
                                     rootPath="/content/training"
-                                    value="/content/training/en"/>
+                                    value="/content/training/en"
+                                    class="logo-link-url"/>
                             <description
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="granite/ui/components/foundation/form/textarea"
