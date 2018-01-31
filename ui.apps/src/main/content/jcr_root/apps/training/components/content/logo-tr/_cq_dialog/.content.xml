@@ -11,7 +11,8 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/foundation/layouts/tabs"
                 type="nav"/>
-        <items jcr:primaryType="nt:unstructured">
+        <items jcr:primaryType="nt:unstructured"
+                sling:hideChildren="[accessibility]">
             <image
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Image"
@@ -24,7 +25,8 @@
                     <column
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/foundation/container">
-                        <items jcr:primaryType="nt:unstructured">
+                        <items jcr:primaryType="nt:unstructured"
+                               sling:hideChildren="[description,title,size]">
                             <file
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/apps/training/components/content/logo-tr/fileupload"
@@ -37,73 +39,21 @@
                                     useHTML5="{Boolean}true"
                                     allowUpload="{Boolean}false"
                                     disabled="{Boolean}true"/>
-                            <title
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                    fieldLabel="Title"
-                                    name="./jcr:title"/>
                             <linkURL
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
                                     fieldLabel="Link to"
                                     name="./linkURL"
                                     rootPath="/content/training"
-                                    value="/content/training/en"
                                     class="logo-link-url"/>
-                            <description
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/foundation/form/textarea"
-                                    fieldLabel="Description"
-                                    name="./jcr:description"
-                                    class="hidden-description"/>
-                            <size
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="cq/gui/components/authoring/dialog/sizefield"
-                                    fieldLabel="Size (px)">
-                                <width
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/foundation/form/numberfield"
-                                        emptyText="Width"
-                                        name="./width"/>
-                                <height
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/foundation/form/numberfield"
-                                        emptyText="Height"
-                                        name="./height"/>
-                            </size>
                         </items>
                     </column>
                 </items>
             </image>
-            <accessibility
+            <meta
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="Accessibility"
-                    sling:resourceType="granite/ui/components/foundation/section">
-                <layout
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
-                        margin="{Boolean}false"/>
-                <items jcr:primaryType="nt:unstructured">
-                    <column
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/foundation/container">
-                        <items jcr:primaryType="nt:unstructured">
-                            <decorative
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/foundation/form/checkbox"
-                                    fieldDescription="Check if the image should be ignored by assistive technology. This applies to decorative images only."
-                                    name="./isDecorative"
-                                    text="Image is decorative"
-                                    value="true"/>
-                            <deleteIsDecorative
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/foundation/form/hidden"
-                                    name="./isDecorative@Delete"
-                                    value="true"/>
-                        </items>
-                    </column>
-                </items>
-            </accessibility>
+                    sling:resourceType="granite/ui/components/foundation/include"
+                    path="/apps/training/components/content/image-meta-info/cq:dialog/content/items/meta"/>
         </items>
     </content>
 </jcr:root>
