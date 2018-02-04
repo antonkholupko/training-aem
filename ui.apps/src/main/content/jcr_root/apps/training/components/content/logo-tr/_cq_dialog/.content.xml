@@ -29,7 +29,7 @@
                                sling:hideChildren="[description,title,size]">
                             <file
                                     jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/apps/training/components/content/logo-tr/fileupload"
+                                    sling:resourceType="granite/ui/components/foundation/form/fileupload"
                                     autoStart="{Boolean}false"
                                     fieldDescription="Featured logo image"
                                     class="cq-droptarget reenable-droptarget"
