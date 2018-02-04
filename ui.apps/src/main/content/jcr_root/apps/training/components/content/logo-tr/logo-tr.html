@@ -1,7 +1,7 @@
 <a
         data-sly-use.image="image.js"
         data-sly-unwrap="${!image.linkUrl}"
-        href="${image.linkUrl}.html"
+        href="${image.linkUrl}"
         onclick="CQ_Analytics.record({event: 'imageClick', values: { imageLink: '${image.linkurl @ context='scriptString'}', imageAsset: '${image.filereference @ context='scriptString'}', imageTitle: '${image.fileName @ context='scriptString'}' }, collect: false, options: { obj: this }, componentPath: '${image.resource.resourceType @ context='scriptString'}'})">
     <img
             src="${image.src}"
