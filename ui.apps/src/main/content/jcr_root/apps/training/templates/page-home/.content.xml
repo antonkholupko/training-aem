@@ -8,9 +8,13 @@
     <jcr:content
         jcr:primaryType="cq:PageContent"
         sling:resourceType="training/components/structure/page">
-        <logo
+        <ipar
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="training/components/structure/logo"/>
+            sling:resourceType="wcm/foundation/components/iparsys">
+            <logo-tr
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="training/components/content/logo-tr"/>
+        </ipar>
         <title
             jcr:primaryType="nt:unstructured"
             sling:resourceType="training/components/content/title"/>

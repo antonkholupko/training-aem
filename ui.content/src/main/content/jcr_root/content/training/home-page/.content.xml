@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content
+            cq:lastModified="{Date}2018-02-05T14:50:15.179+03:00"
+            cq:lastModifiedBy="admin"
+            cq:template="/apps/training/templates/page-home"
+            jcr:primaryType="cq:PageContent"
+            jcr:title="home-page"
+            sling:resourceType="training/components/structure/page">
+        <ipar
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/iparsys">
+            <logo-tr
+                    jcr:lastModified="{Date}2018-02-05T14:50:15.177+03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="training/components/content/logo-tr"
+                    alt="Logo TR ait text"
+                    fileReference="/content/dam/training/logo.png"
+                    height="50"
+                    linkURL="/content/training/home-page.html"
+                    title="Logo TR Image"
+                    width="200"/>
+        </ipar>
+        <title
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="training/components/content/title"/>
+        <topnav
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="training/components/structure/topnav"/>
+        <par
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/parsys">
+            <text
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="training/components/content/text"
+                    text="&lt;p>This is a home page&lt;/p>"
+                    textIsRich="true"/>
+        </par>
+    </jcr:content>
+    <child-page/>
+</jcr:root>

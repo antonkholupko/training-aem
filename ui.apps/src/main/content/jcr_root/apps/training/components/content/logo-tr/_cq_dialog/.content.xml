@@ -45,7 +45,7 @@
                                     fieldLabel="Link to"
                                     name="./linkURL"
                                     rootPath="/content/training"
-                                    value="/content/training.html"
+                                    value="/content/training/home-page.html"
                                     class="logo-link-url"/>
                         </items>
                     </column>
