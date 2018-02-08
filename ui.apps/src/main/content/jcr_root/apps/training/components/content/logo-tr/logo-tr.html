@@ -1,8 +1,7 @@
 <a
-        data-sly-use.image="image.js"
+        data-sly-use.image="logo-tr.js"
         data-sly-unwrap="${!image.linkUrl}"
-        href="${image.linkUrl}"
-        onclick="CQ_Analytics.record({event: 'imageClick', values: { imageLink: '${image.linkurl @ context='scriptString'}', imageAsset: '${image.filereference @ context='scriptString'}', imageTitle: '${image.fileName @ context='scriptString'}' }, collect: false, options: { obj: this }, componentPath: '${image.resource.resourceType @ context='scriptString'}'})">
+        href="${image.linkUrl}">
     <img
             src="${image.src}"
             alt="${image.alt}"
@@ -10,18 +9,5 @@
             width="${image.width}"
             height="${image.height}"
             class="${image.cssClass}"
-            data-emptytext="Logo TR"
-            usemap="${image.imageMaps.hash}"/>
+            data-emptytext="Logo TR"/>
 </a>
-
-<!--map
-        data-sly-list="${image.imageMaps.maps}"
-        name="${image.imageMaps.name}">
-    <area
-            shape="${item.type}"
-            coords="${item.coords}"
-            href="${item.href}"
-            target="${item.target}"
-            alt="${item.alt}"
-            title="${item.title}"/>
-</map-->
